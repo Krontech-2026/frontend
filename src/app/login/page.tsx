@@ -10,7 +10,7 @@ export default function Page(){
                     <h1 className="text-[#398952] text-3xl text-center font-bold">Simplexo</h1>
                 </div>
             </div>
-            <div className="flex gap-6 border rounded-3xl justify-center shadow bg-[#002126] py-24 mt-2 ">
+            <div className="flex gap-6 border rounded-3xl justify-center shadow bg-[#002126] py-18 mt-2 ">
                 <div>
                     <p className="text-[#398952] text-2xl">
                         Medical tech,
@@ -25,7 +25,7 @@ export default function Page(){
                     </h1>
                 </div>
             </div>
-            <div className="rounded-3xl shadow bg-[#002126] mt-2">
+            <div className="rounded-3xl shadow bg-[#002126] mt-2 py-3">
                 <div className="flex justify-center">
                     <div className="mt-10">
                         <h1>
@@ -82,13 +82,14 @@ export default function Page(){
                         <FaFacebook className="text-2xl" />
                     </button>
                 </div>
-                <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-2">
+                <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-9">
                     <span>Don't have an account?</span>
 
-                    <Link href="/signup" className="text-[#398952] hover:underline">
+                    <Link href="/register" className="text-[#398952] hover:underline">
                         Sign up
                     </Link>
                 </div>
+                <div className="bg-[#002126] mt-1"></div>
             </div>
         </div>
     );

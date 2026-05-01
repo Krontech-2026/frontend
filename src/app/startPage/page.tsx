@@ -8,7 +8,7 @@ export default function Page(){
                     <h1 className="text-[#398952] text-3xl text-center font-bold">Simplexo</h1>
                 </div>
             </div>
-            <div className="flex gap-6 border rounded-3xl justify-center shadow bg-[#002126] py-20 mt-2 ">
+            <div className="flex gap-6 border rounded-3xl justify-center shadow bg-[#002126] py-18 mt-2 ">
                 <div>
                     <p className="text-[#398952] text-2xl">
                         Medical tech,
@@ -24,13 +24,11 @@ export default function Page(){
                 </div>
             </div>
             <div className="rounded-3xl shadow bg-[#002126] mt-2">
-                <div className="py-48.5 px-5">
+                <div className="py-51 px-5">
                     <div className="flex flex-col justify-center gap-2.5">
-                        <button className="bg-[#398952] text-2xl rounded-full py-4">
-                            <p className="text-[#FFFFFF]">
-                                Sign up
-                            </p>
-                        </button>
+                        <Link href="/register" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
+                            Sign Up
+                        </Link>
                         <Link href="/login" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
                             Log in
                         </Link>
