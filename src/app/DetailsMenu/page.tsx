@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
             <main className="flex flex-1 w-full max-w-3xl flex-col items-center space-y-10 py-32 px-16 bg-white dark:bg-black sm:items-start">
                 <div className="w-full bg-emerald-950 rounded-4xl px-6 py-10  text-emerald-600 text-2xl font-semibold">
-                    Nume aplicatie
+                    Simplexo
                 </div>
 
                 <div className="w-full bg-white border-2 rounded-4xl px-6 py-10  text-emerald-600 text-2xl font-semibold">
