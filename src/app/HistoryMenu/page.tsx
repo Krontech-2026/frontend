@@ -19,8 +19,6 @@ export default function Home() {
                     <h1 className="text-emerald-60-600 text-2xl font-semibold">History</h1>
                 </div>
 
-
-
                 <div className="w-full flex items-center space-x-2">
                     <input
                         type="text"
@@ -32,8 +30,6 @@ export default function Home() {
                         <FontAwesomeIcon icon={faMagnifyingGlass} className="text-xl" />
                     </button>
                 </div>
-                
-                
                 
                 <div className="w-full flex flex-col space-y-4">
                     <h2 className="text-emerald-600 font-semibold text-lg px-2">Today</h2>
@@ -77,8 +73,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                
-                
                 
                 <div className="w-full flex flex-col space-y-4">
                     <h2 className="text-emerald-600 font-semibold text-lg px-2">Yesterday</h2>

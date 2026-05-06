@@ -32,7 +32,6 @@ export default function Home() {
                 </div>
                 
                 <div className="w-full flex flex-col space-y-4">
-                    {/* Saved Item 1 */}
                     <div className="w-full bg-emerald-950 rounded-2xl p-4 text-white">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center space-x-4">
@@ -48,7 +47,6 @@ export default function Home() {
                         </div>
                     </div>
                     
-                    {/* Saved Item 2 */}
                     <div className="w-full bg-emerald-950 rounded-2xl p-4 text-white">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center space-x-4">
@@ -64,7 +62,6 @@ export default function Home() {
                         </div>
                     </div>
                     
-                    {/* Saved Item 3 */}
                     <div className="w-full bg-emerald-950 rounded-2xl p-4 text-white">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center space-x-4">
