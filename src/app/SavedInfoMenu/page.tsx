@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faMagnifyingGlass, faBookmark, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,9 +13,9 @@ export default function Home() {
             
             <main className="flex flex-1 w-full max-w-3xl flex-col items-center space-y-6 p-4 bg-white dark:bg-zinc-900 rounded-t-3xl mt-4">
                 <div className="w-full flex items-center justify-center relative py-2">
-                    <button className="absolute left-4">
+                    <Link href="/HomePage" className="absolute left-4">
                         <FontAwesomeIcon icon={faArrowLeft} className="text-emerald-600 text-2xl cursor-pointer" />
-                    </button>
+                    </Link>
                     
                     <h1 className="text-emerald-600 text-2xl font-semibold">Saved Info</h1>
                 </div>

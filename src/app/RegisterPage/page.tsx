@@ -42,7 +42,7 @@ export default function Page(){
                         </h1>
                     </div>
                 </div>
-                <div className="px-5 mt-10">
+                <div className="px-5 mt-10 flex justify-center">
                     <div className="flex flex-col justify-center gap-2 w-full max-w-sm">
                         <input
                             type="text"
@@ -74,7 +74,6 @@ export default function Page(){
                             </button>
                         </div>
 
-                        {/* Confirm Password */}
                         <div className="relative">
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
@@ -99,7 +98,7 @@ export default function Page(){
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-center gap-3 w-full max-w-sm">
+                <div className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto">
 
                     <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
                         <FcGoogle className="text-2xl" />
@@ -112,7 +111,7 @@ export default function Page(){
                 <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-2">
                     <span>Already have an account?</span>
 
-                    <Link href="/login" className="text-[#398952] hover:underline">
+                    <Link href="/LoginPage" className="text-[#398952] hover:underline">
                         Log in
                     </Link>
                 </div>

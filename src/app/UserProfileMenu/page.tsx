@@ -1,3 +1,5 @@
+'use client';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faMagnifyingGlass, faBookmark, faChevronRight, faPencil, faUser, faSliders } from '@fortawesome/free-solid-svg-icons';
 
@@ -68,9 +70,9 @@ export default function Home() {
             </main>
 
             <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 flex gap-4 items-center">
-                <button className="bg-emerald-950 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors">
+                <Link href="/HomePage" className="bg-emerald-950 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors flex items-center justify-center">
                     Home
-                </button>
+                </Link>
                 <button className="bg-emerald-600 text-emerald-950 px-8 py-3 rounded-full font-semibold hover:bg-emerald-500 transition-colors">
                     Profile
                 </button>

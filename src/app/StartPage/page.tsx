@@ -26,10 +26,10 @@ export default function Page(){
             <div className="rounded-3xl shadow bg-[#002126] mt-2">
                 <div className="py-51 px-5">
                     <div className="flex flex-col justify-center gap-2.5">
-                        <Link href="/register" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
+                        <Link href="/RegisterPage" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
                             Sign Up
                         </Link>
-                        <Link href="/login" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
+                        <Link href="/LoginPage" className="bg-[#398952] text-2xl rounded-full py-4 text-white block text-center">
                             Log in
                         </Link>
                     </div>

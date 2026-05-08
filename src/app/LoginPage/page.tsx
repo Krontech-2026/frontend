@@ -35,7 +35,7 @@ export default function Page(){
                         </h1>
                     </div>
                 </div>
-                <div className="px-5 mt-10">
+                <div className="px-5 mt-10 flex justify-center">
                     <div className="flex flex-col justify-center gap-2 w-full max-w-sm">
                         <input
                             type="text"
@@ -49,7 +49,7 @@ export default function Page(){
                         />
                         <div className="flex justify-between items-center text-sm text-[#398952] mt-2">
 
-                            <label className="flex items-cemter gap-2 text-sm text-[#398952] cursor-pointer">
+                            <label className="flex items-center gap-2 text-sm text-[#398952] cursor-pointer">
                                 <input
                                 type="checkbox"
                                 className="w-4 h-4 accent-[#398952] cursor-pointer"/>
@@ -72,7 +72,7 @@ export default function Page(){
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-center gap-3 w-full max-w-sm">
+                <div className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto">
 
                     <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
                         <FcGoogle className="text-2xl" />
@@ -85,7 +85,7 @@ export default function Page(){
                 <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-9">
                     <span>Don't have an account?</span>
 
-                    <Link href="/register" className="text-[#398952] hover:underline">
+                    <Link href="/RegisterPage" className="text-[#398952] hover:underline">
                         Sign up
                     </Link>
                 </div>
