@@ -5,10 +5,31 @@ import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function Page(){
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const router = useRouter();
+
+    const isSignUpEnabled = 
+        firstName.trim() !== "" && 
+        lastName.trim() !== "" && 
+        email.trim() !== "" && 
+        password.trim() !== "" && 
+        confirmPassword.trim() !== "" &&
+        password === confirmPassword;
+
+    const handleSignUp = () => {
+        if (isSignUpEnabled) {
+            router.push("/HomePage");
+        }
+    };
 
     return(
         <div className="min-h-full bg-[#FFFFFF] p-1.5">
@@ -47,22 +68,30 @@ export default function Page(){
                         <input
                             type="text"
                             placeholder="First Name"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
                             className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
                         />
                         <input
                             type="text"
                             placeholder="Last Name"
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
                             className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
                         />
                         <input
                             type="email"
                             placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
                         />
                         <div className="relative">
                             <input
                                 type={showPassword ? "text" : "password"}
                                 placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                                 className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none w-full pr-12"
                             />
                             <button
@@ -78,6 +107,8 @@ export default function Page(){
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
                                 placeholder="Confirm Password"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
                                 className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none w-full pr-12"
                             />
                             <button
@@ -88,8 +119,22 @@ export default function Page(){
                                 {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
                             </button>
                         </div>
+                        {password && confirmPassword && password !== confirmPassword && (
+                            <p className="text-red-500 text-center text-sm">
+                                The passwords don't match!
+                            </p>
+                        )}
                         <div className="flex items-center justify-center gap-2 w-full max-w-sm mt-3">
-                            <button className="bg-[#398952] text-lg rounded-full py-2 px-16 text-white">
+                            <button 
+                                onClick={handleSignUp}
+                                disabled={!isSignUpEnabled}
+                                type="button"
+                                className={`text-lg rounded-full py-2 px-16 text-white transition-all ${
+                                    isSignUpEnabled 
+                                        ? 'bg-[#398952] cursor-pointer hover:bg-[#2a6239]' 
+                                        : 'bg-gray-400 cursor-not-allowed opacity-50'
+                                }`}
+                            >
                                 Sign Up
                             </button>
                         </div>
@@ -100,11 +145,11 @@ export default function Page(){
                 </div>
                 <div className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto">
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
+                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
                         <FcGoogle className="text-2xl" />
                     </button>
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
+                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
                         <FaFacebook className="text-2xl" />
                     </button>
                 </div>

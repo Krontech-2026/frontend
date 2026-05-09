@@ -1,8 +1,25 @@
+"use client";
+
 import {FcGoogle} from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Page(){
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const router = useRouter();
+
+    const isLoginEnabled = email.trim() !== "" && password.trim() !== "";
+
+    const handleLogin = () => {
+        if (isLoginEnabled) {
+            router.push("/HomePage");
+        }
+    };
     return(
         <div className="min-h-full bg-[#FFFFFF] p-1.5">
             <div className="flex items-center justify-center">
@@ -40,11 +57,15 @@ export default function Page(){
                         <input
                             type="text"
                             placeholder="Email or phone number"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
                         />
                         <input
                             type="password"
                             placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                             className=" bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
                         />
                         <div className="flex justify-between items-center text-sm text-[#398952] mt-2">
@@ -57,13 +78,22 @@ export default function Page(){
                                 Remember me
                             </label>
 
-                            <button className="hover:underline">
+                            <button className="hover:underline cursor-pointer" type="button" aria-label="Forgot password">
                                 Forgot password?
                             </button>
 
                         </div>
                         <div className="flex items-center justify-center gap-2 w-full max-w-sm mt-12">
-                            <button className="bg-[#398952] text-lg rounded-full py-2 px-16 text-white">
+                            <button 
+                                onClick={handleLogin}
+                                disabled={!isLoginEnabled}
+                                type="button" 
+                                className={`text-lg rounded-full py-2 px-16 text-white transition-all ${
+                                    isLoginEnabled 
+                                        ? 'bg-[#398952] cursor-pointer hover:bg-[#2a6239]' 
+                                        : 'bg-gray-400 cursor-not-allowed opacity-50'
+                                }`}
+                            >
                                 Login
                             </button>
                         </div>
@@ -74,11 +104,11 @@ export default function Page(){
                 </div>
                 <div className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto">
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
+                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
                         <FcGoogle className="text-2xl" />
                     </button>
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full">
+                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
                         <FaFacebook className="text-2xl" />
                     </button>
                 </div>
