@@ -1,6 +1,9 @@
+"use client";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faMagnifyingGlass, faCamera, faFloppyDisk, faClock, faCalendarDays, faSliders, faUser } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
     return (
@@ -32,13 +35,13 @@ export default function Home() {
 
                     <div className="bg-white rounded-2xl p-4 flex items-center justify-between">
                         <div>
-                            <p className="text-emerald-600 text-sm font-semibold">MONDAY</p>
-                            <p className="text-5xl font-bold text-emerald-600 leading-none">12</p>
-                            <p className="text-emerald-600">May 2025</p>
+                            <p className="text-emerald-600 text-sm font-semibold">{dateInfo.day.toUpperCase()}</p>
+                            <p className="text-5xl font-bold text-emerald-600 leading-none">{dateInfo.date}</p>
+                            <p className="text-emerald-600">{dateInfo.month} {dateInfo.year}</p>
                         </div>
-                        <div className="text-emerald-600 text-4xl">
+                        <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 text-4xl cursor-pointer hover:text-emerald-700 transition-colors">
                             <FontAwesomeIcon icon={faCalendarDays} />
-                        </div>
+                        </a>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
