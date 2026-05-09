@@ -149,7 +149,7 @@ export default function Page(){
                         <FcGoogle className="text-2xl" />
                     </button>
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
+                    <button className="flex items-center justify-center gap-2 text-[#1877F2] py-3 rounded-full cursor-pointer" type={"button"}>
                         <FaFacebook className="text-2xl" />
                     </button>
                 </div>
@@ -165,4 +165,3 @@ export default function Page(){
         </div>
     );
 }
-
