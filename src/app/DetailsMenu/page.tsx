@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faMagnifyingGlass, faSliders, faCircleInfo, faArrowRight, faArrowRightFromBracket} from '@fortawesome/free-solid-svg-icons';
+import { faSliders, faCircleInfo, faArrowRight, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
     return (

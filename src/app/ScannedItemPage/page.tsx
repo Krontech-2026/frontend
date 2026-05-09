@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -7,18 +7,11 @@ import { faHeart as faHeartEmpty } from '@fortawesome/free-regular-svg-icons';
 
 export default function Home() {
     const [isFilled, setIsFilled] = useState(false);
-    const [backLink, setBackLink] = useState('/HistoryMenu');
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    useEffect(() => {
-        const from = searchParams.get('from');
-        if (from === 'SavedInfoMenu') {
-            setBackLink('/SavedInfoMenu');
-        } else if (from === 'HistoryMenu') {
-            setBackLink('/HistoryMenu');
-        }
-    }, [searchParams]);
+    const from = searchParams.get('from');
+    const backLink = from === 'SavedInfoMenu' ? '/SavedInfoMenu' : '/HistoryMenu';
 
     const toggleHeart = () => {
         setIsFilled(!isFilled);

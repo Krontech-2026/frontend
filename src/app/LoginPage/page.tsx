@@ -3,8 +3,6 @@
 import {FcGoogle} from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -113,7 +111,7 @@ export default function Page(){
                     </button>
                 </div>
                 <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-9">
-                    <span>Don't have an account?</span>
+                    <span>Don&apos;t have an account?</span>
 
                     <Link href="/RegisterPage" className="text-[#398952] hover:underline">
                         Sign up

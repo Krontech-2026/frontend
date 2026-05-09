@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faMagnifyingGlass, faBookmark, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faMagnifyingGlass, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {

@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faMagnifyingGlass, faBookmark, faChevronRight, faPencil, faUser, faSliders } from '@fortawesome/free-solid-svg-icons';
+import { faPencil, faUser, faSliders } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
     return (
@@ -76,7 +76,7 @@ export default function Home() {
                 <button className="bg-emerald-600 text-emerald-950 px-8 py-3 rounded-full font-semibold hover:bg-emerald-500 transition-colors">
                     Profile
                 </button>
-                <button className="bg-emerald-950 text-emerald-600 rounded-full p-3 hover:bg-emerald-900 transition-colors flex items-center justify-center">
+                <button className="bg-emerald-950 text-emerald-600 rounded-full p-3 hover:bg-emerald-900 transition-colors flex items-center justify-center cursor-pointer">
                     <FontAwesomeIcon icon={faSliders} className="text-xl transform rotate-90" />
                 </button>
             </div>

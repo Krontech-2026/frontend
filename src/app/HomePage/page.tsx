@@ -2,7 +2,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faMagnifyingGlass, faCamera, faFloppyDisk, faClock, faCalendarDays, faSliders, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faCamera, faFloppyDisk, faClock, faCalendarDays, faSliders } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -101,7 +101,7 @@ export default function Home() {
                         <Link href="/UserProfileMenu" className="bg-emerald-950 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors">
                             Profile
                         </Link>
-                        <button className="bg-emerald-950 text-emerald-600 rounded-full p-3 hover:bg-emerald-900 transition-colors flex items-center justify-center">
+                        <button className="bg-emerald-950 text-emerald-600 rounded-full p-3 hover:bg-emerald-900 transition-colors flex items-center justify-center cursor-pointer">
                             <FontAwesomeIcon icon={faSliders} className="text-xl transform rotate-90" />
                         </button>
                     </div>

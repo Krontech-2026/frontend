@@ -120,8 +120,8 @@ export default function Page(){
                             </button>
                         </div>
                         {password && confirmPassword && password !== confirmPassword && (
-                            <p className="text-red-500 text-center text-sm">
-                                The passwords don't match!
+                            <p key="password-mismatch" className="text-red-500 text-center text-sm">
+                                The passwords don&apos;t match!
                             </p>
                         )}
                         <div className="flex items-center justify-center gap-2 w-full max-w-sm mt-3">
