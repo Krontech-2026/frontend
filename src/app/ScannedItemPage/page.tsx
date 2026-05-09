@@ -1,15 +1,31 @@
 'use client';
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartEmpty } from '@fortawesome/free-regular-svg-icons';
 
 export default function Home() {
     const [isFilled, setIsFilled] = useState(false);
+    const [backLink, setBackLink] = useState('/HistoryMenu');
+    const searchParams = useSearchParams();
+    const router = useRouter();
+
+    useEffect(() => {
+        const from = searchParams.get('from');
+        if (from === 'SavedInfoMenu') {
+            setBackLink('/SavedInfoMenu');
+        } else if (from === 'HistoryMenu') {
+            setBackLink('/HistoryMenu');
+        }
+    }, [searchParams]);
 
     const toggleHeart = () => {
         setIsFilled(!isFilled);
+    };
+
+    const handleBack = () => {
+        router.push(backLink);
     };
 
     return (
@@ -21,9 +37,9 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-center justify-between">
-                        <Link href="/HomePage" className="text-emerald-600 text-2xl cursor-pointer">
+                        <button onClick={handleBack} className="text-emerald-600 text-2xl cursor-pointer">
                             <FontAwesomeIcon icon={faArrowLeft} />
-                        </Link>
+                        </button>
                         <h1 className="text-emerald-600 text-2xl font-semibold flex-1 text-center">
                             Item
                         </h1>

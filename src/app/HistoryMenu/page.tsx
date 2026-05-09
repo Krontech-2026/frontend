@@ -1,8 +1,15 @@
+'use client';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faMagnifyingGlass, faClock, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+    const router = useRouter();
+
+    const handleItemClick = () => {
+        router.push('/ScannedItemPage?from=HistoryMenu');
+    };
     return (
         <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black">
             <div className="w-full max-w-3xl px-4 pt-10">
@@ -44,7 +51,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                     
@@ -57,7 +66,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                     
@@ -70,7 +81,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -87,7 +100,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                     
@@ -100,7 +115,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                     
@@ -113,7 +130,9 @@ export default function Home() {
                                     <p className="text-sm text-gray-400">08:30 PM</p>
                                 </div>
                             </div>
-                            <FontAwesomeIcon icon={faChevronRight} className="text-emerald-400" />
+                            <button onClick={handleItemClick} className="text-emerald-400 cursor-pointer hover:text-emerald-300 transition-colors">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </button>
                         </div>
                     </div>
                 </div>
