@@ -6,6 +6,34 @@ import { faMagnifyingGlass, faCamera, faFloppyDisk, faClock, faCalendarDays, faS
 import { useState, useEffect } from 'react';
 
 export default function Home() {
+    const [dateInfo, setDateInfo] = useState({
+        day: "Saturday",
+        date: 9,
+        month: "May",
+        year: 2026
+    });
+
+    useEffect(() => {
+        const updateDate = () => {
+            const now = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            setDateInfo({
+                day: days[now.getDay()],
+                date: now.getDate(),
+                month: months[now.getMonth()],
+                year: now.getFullYear()
+            });
+        };
+
+        updateDate();
+
+        const interval = setInterval(updateDate, 60000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="flex items-center justify-center min-h-screen bg-emerald-950 font-sans p-6">
             <div className="w-full max-w-md bg-white rounded-3xl p-6 shadow-xl">
