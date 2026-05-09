@@ -38,19 +38,19 @@ export default function Page(){
                     <h1 className="text-[#398952] text-3xl text-center font-bold">Simplexo</h1>
                 </div>
             </div>
-            <div className="flex gap-6 border rounded-3xl justify-center shadow bg-[#002126] py-18 mt-2 ">
-                <div>
-                    <p className="text-[#398952] text-2xl">
+            <div className="flex border rounded-3xl justify-between shadow bg-[#002126] py-18 mt-2 px-6">
+                <div className="flex-1 flex flex-col justify-center items-center">
+                    <p className="text-[#398952] text-3xl">
                         Medical tech,
                     </p>
-                    <p className="text-[#398952] text-2xl">
+                    <p className="text-[#398952] text-3xl">
                         made simple
                     </p>
                 </div>
-                <div>
-                    <h1 className="text-[#398952] text-2xl">
-                        IMAGINE
-                    </h1>
+                <div className="flex-1 flex justify-center items-center">
+                    <div className="bg-gray-500 text-white px-12 py-6 rounded-lg text-center text-xl">
+                        logo
+                    </div>
                 </div>
             </div>
             <div className="rounded-3xl shadow bg-[#002126] mt-2 py-3">
