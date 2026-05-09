@@ -29,9 +29,7 @@ export default function Home() {
 
         updateDate();
 
-        const interval = setInterval(updateDate, 60000);
-
-        return () => clearInterval(interval);
+        return
     }, []);
 
     return (
