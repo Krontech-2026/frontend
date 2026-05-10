@@ -32,136 +32,161 @@ export default function Page(){
     };
 
     return(
-        <div className="min-h-full bg-[#FFFFFF] p-1.5">
-            <div className="flex items-center justify-center">
-                <div className="border rounded-3xl shadow w-full bg-[#002126] mt-1 py-7">
-                    <h1 className="text-[#398952] text-3xl text-center font-bold">Simplexo</h1>
+        <div className="min-h-full bg-linear-to-br from-white via-emerald-50 to-white p-4 overflow-y-auto">
+            <div className="flex items-center justify-center mb-2 animate-fade-in">
+                <div className="border rounded-3xl shadow-xl bg-linear-to-r from-emerald-950 to-emerald-900 py-6 px-8 w-full max-w-md hover-lift">
+                    <h1 className="text-emerald-400 text-4xl text-center font-bold">Simplexo</h1>
                 </div>
             </div>
-            <div className="flex border rounded-3xl justify-between shadow bg-[#002126] py-18 mt-2 px-6">
-                <div className="flex-1 flex flex-col justify-center items-center">
-                    <p className="text-[#398952] text-3xl">
-                        Medical tech,
-                    </p>
-                    <p className="text-[#398952] text-3xl">
-                        made simple
-                    </p>
-                </div>
-                <div className="flex-1 flex justify-center items-center">
-                    <div className="bg-gray-500 text-white px-12 py-6 rounded-lg text-center text-xl">
-                        logo
+
+            <div className="flex items-center justify-center mb-4 animate-slide-in" style={{animationDelay: '0.1s'}}>
+                <div className="rounded-3xl shadow-lg bg-white py-8 px-6 w-full max-w-md border-2 border-emerald-100 hover-lift">
+                    <div className="flex flex-col justify-center items-center gap-2">
+                        <p className="text-emerald-950 text-3xl font-bold">Medical Tech,</p>
+                        <p className="text-emerald-600 text-3xl font-bold">Made Simple</p>
                     </div>
                 </div>
             </div>
-            <div className="rounded-3xl shadow bg-[#002126] mt-2 py-3">
+
+            <div className="rounded-3xl shadow-2xl bg-linear-to-b from-emerald-950 to-emerald-900 py-8 px-6 max-w-md mx-auto w-full animate-slide-in mb-8" style={{animationDelay: '0.2s'}}>
+                <div className="flex justify-center mb-8">
+                    <h1 className="text-emerald-400 text-5xl font-bold">Sign up</h1>
+                </div>
+
                 <div className="flex justify-center">
-                    <div className="mt-8">
-                        <h1>
-                            <p className="text-[#398952] text-4xl">
-                                Sign up
-                            </p>
-                        </h1>
-                    </div>
-                </div>
-                <div className="px-5 mt-10 flex justify-center">
-                    <div className="flex flex-col justify-center gap-2 w-full max-w-sm">
-                        <input
-                            type="text"
-                            placeholder="First Name"
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                            className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Last Name"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                            className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
-                        />
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none"
-                        />
-                        <div className="relative">
+                    <div className="flex flex-col justify-center gap-4 w-full">
+                        <div>
+                            <label className="text-emerald-300 text-sm font-semibold mb-2 block">First Name</label>
                             <input
-                                type={showPassword ? "text" : "password"}
-                                placeholder="Password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none w-full pr-12"
+                                type="text"
+                                placeholder="John"
+                                value={firstName}
+                                onChange={(e) => setFirstName(e.target.value)}
+                                className="w-full bg-emerald-800 text-white placeholder-emerald-400 px-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-900 transition-all hover:bg-emerald-700"
                             />
-                            <button
-                                type="button"
-                                onClick={() => setShowPassword(!showPassword)}
-                                className="absolute right-4 top-2.5 text-white"
-                            >
-                                {showPassword ? <FaEyeSlash /> : <FaEye />}
-                            </button>
                         </div>
 
-                        <div className="relative">
+                        <div>
+                            <label className="text-emerald-300 text-sm font-semibold mb-2 block">Last Name</label>
                             <input
-                                type={showConfirmPassword ? "text" : "password"}
-                                placeholder="Confirm Password"
-                                value={confirmPassword}
-                                onChange={(e) => setConfirmPassword(e.target.value)}
-                                className="bg-[#398952] text-white placeholder-white px-4 py-2 rounded-full outline-none w-full pr-12"
+                                type="text"
+                                placeholder="Doe"
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
+                                className="w-full bg-emerald-800 text-white placeholder-emerald-400 px-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-900 transition-all hover:bg-emerald-700"
                             />
-                            <button
-                                type="button"
-                                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                                className="absolute right-4 top-2.5 text-white"
-                            >
-                                {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
-                            </button>
                         </div>
+
+                        <div>
+                            <label className="text-emerald-300 text-sm font-semibold mb-2 block">Email</label>
+                            <input
+                                type="email"
+                                placeholder="you@example.com"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="w-full bg-emerald-800 text-white placeholder-emerald-400 px-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-900 transition-all hover:bg-emerald-700"
+                            />
+                        </div>
+
+                        <div>
+                            <label className="text-emerald-300 text-sm font-semibold mb-2 block">Password</label>
+                            <div className="relative">
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    placeholder="••••••••"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    className="w-full bg-emerald-800 text-white placeholder-emerald-400 px-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-900 transition-all hover:bg-emerald-700 pr-12"
+                                />
+                                <button
+                                    type="button"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors"
+                                >
+                                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label className="text-emerald-300 text-sm font-semibold mb-2 block">Confirm Password</label>
+                            <div className="relative">
+                                <input
+                                    type={showConfirmPassword ? "text" : "password"}
+                                    placeholder="••••••••"
+                                    value={confirmPassword}
+                                    onChange={(e) => setConfirmPassword(e.target.value)}
+                                    className="w-full bg-emerald-800 text-white placeholder-emerald-400 px-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-900 transition-all hover:bg-emerald-700 pr-12"
+                                />
+                                <button
+                                    type="button"
+                                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors"
+                                >
+                                    {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                                </button>
+                            </div>
+                        </div>
+
                         {password && confirmPassword && password !== confirmPassword && (
-                            <p key="password-mismatch" className="text-red-500 text-center text-sm">
-                                The passwords don&apos;t match!
-                            </p>
+                            <div key="password-mismatch" className="bg-red-500 bg-opacity-20 border border-red-500 text-red-200 rounded-full px-4 py-2 text-center text-sm font-semibold animate-pulse">
+                                Passwords don&apos;t match!
+                            </div>
                         )}
-                        <div className="flex items-center justify-center gap-2 w-full max-w-sm mt-3">
-                            <button 
-                                onClick={handleSignUp}
-                                disabled={!isSignUpEnabled}
-                                type="button"
-                                className={`text-lg rounded-full py-2 px-16 text-white transition-all ${
-                                    isSignUpEnabled 
-                                        ? 'bg-[#398952] cursor-pointer hover:bg-[#2a6239]' 
-                                        : 'bg-gray-400 cursor-not-allowed opacity-50'
-                                }`}
-                            >
-                                Sign Up
-                            </button>
+
+                        <button 
+                            onClick={handleSignUp}
+                            disabled={!isSignUpEnabled}
+                            type="button"
+                            className={`text-lg rounded-full py-3 px-8 text-white font-semibold transition-all duration-300 w-full mt-4 ${
+                                isSignUpEnabled 
+                                    ? 'bg-emerald-500 cursor-pointer hover:bg-emerald-400 hover:shadow-lg active:scale-95 hover-lift' 
+                                    : 'bg-gray-600 cursor-not-allowed opacity-50'
+                            }`}
+                        >
+                            Sign Up
+                        </button>
+
+                        <div className="relative my-6">
+                            <div className="absolute inset-0 flex items-center">
+                                <div className="w-full border-t border-emerald-700"></div>
+                            </div>
+                            <div className="relative flex justify-center text-sm">
+                                <span className="px-2 bg-linear-to-b from-emerald-950 to-emerald-900 text-emerald-400">Or sign up with</span>
+                            </div>
                         </div>
-                        <div className="flex items-center justify-center gap-2 w-full max-w-sm mt-1">
-                            <h1 className="text-[#398952] text-sm">Or sign up with:</h1>
+
+                        <div className="flex items-center justify-center gap-4">
+                            <button 
+                                className="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 px-6 rounded-full cursor-pointer hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold" 
+                                type="button"
+                            >
+                                <FcGoogle className="text-2xl" />
+                                <span className="text-sm">Google</span>
+                            </button>
+
+                            <button 
+                                className="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-full cursor-pointer hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold" 
+                                type="button"
+                            >
+                                <FaFacebook className="text-2xl" />
+                                <span className="text-sm">Facebook</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-center gap-3 w-full max-w-sm mx-auto">
 
-                    <button className="flex items-center justify-center gap-2 text-[#398952] py-3 rounded-full cursor-pointer" type={"button"}>
-                        <FcGoogle className="text-2xl" />
-                    </button>
-
-                    <button className="flex items-center justify-center gap-2 text-[#1877F2] py-3 rounded-full cursor-pointer" type={"button"}>
-                        <FaFacebook className="text-2xl" />
-                    </button>
-                </div>
-                <div className="flex items-center justify-center gap-1 text-sm text-[#FFFFFF] mt-2">
+                <div className="flex items-center justify-center gap-2 text-sm text-emerald-100 mt-8 pt-6 border-t border-emerald-700">
                     <span>Already have an account?</span>
-
-                    <Link href="/LoginPage" className="text-[#398952] hover:underline">
+                    <Link href="/LoginPage" className="text-emerald-400 hover:text-emerald-300 font-bold transition-colors hover:underline">
                         Log in
                     </Link>
                 </div>
-                <div className="bg-[#002126] mt-1"></div>
             </div>
+
+            {/* Decorative Elements */}
+            <div className="fixed -bottom-20 -right-20 w-96 h-96 bg-linear-to-br from-emerald-600 to-emerald-900 rounded-full opacity-5 pointer-events-none"></div>
+            <div className="fixed -top-20 -left-20 w-80 h-80 bg-linear-to-br from-emerald-400 to-emerald-700 rounded-full opacity-5 pointer-events-none"></div>
         </div>
     );
 }
