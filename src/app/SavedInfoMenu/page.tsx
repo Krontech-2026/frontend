@@ -73,7 +73,7 @@ export default function Home() {
                 <button className="w-full mt-8 bg-linear-to-r from-red-500 to-red-600 rounded-full py-4 text-white font-bold hover:from-red-400 hover:to-red-500 hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md">
                     <FontAwesomeIcon icon={faTrash} />
                     Delete All Saved Items
-                </button>
+                </button>1
             </main>
         </div>
     );

@@ -1,0 +1,55 @@
+{
+  "userGuide": {
+    "title": "Guía del usuario",
+    "welcome": "¡Bienvenido a Simplexo! Esta guía le ayudará a aprovechar al máximo nuestra aplicación de tecnología médica. ¡Siga estos 5 sencillos pasos para convertirse en un usuario avanzado! 🚀",
+    "step1": {
+      "title": "¿Quiénes somos?",
+      "content": "Este proyecto fue desarrollado para la competencia KronTech, organizada por KronSoft. Nuestra misión es cerrar la brecha entre la tecnología médica compleja y el usuario cotidiano."
+    },
+    "step2": {
+      "title": "¿Para quién es esto?",
+      "content": "Esta guía es para todos. Ya sea que sea un paciente, un cuidador o simplemente un aprendiz curioso, nuestro objetivo es garantizar que cualquiera pueda operar dispositivos médicos esenciales, como EpiPens, medidores de glucosa y kits de inyección, de manera segura, confiada y efectiva."
+    },
+    "step3": {
+      "title": "Sobre el proyecto",
+      "content": "Creado para la competencia KronTech por KronSoft, este proyecto tiene como objetivo simplificar la forma en que las personas interactúan con la tecnología médica. Creemos que comprender sus herramientas de salud no debería ser difícil.\n\nDesde medidores de glucosa hasta EpiPens, proporcionamos instrucciones claras y accesibles diseñadas para cada usuario, asegurando que los dispositivos médicos sean utilizados de manera adecuada y efectiva por cualquier persona, en cualquier lugar."
+    },
+    "step4": {
+      "title": "Cómo usar la aplicación",
+      "slides": [
+        {
+          "title": "Panel de inicio",
+          "description": "El centro neurálgico: la pantalla de inicio es su punto de partida. Desde aquí, puede acceder rápidamente a todas las funciones principales de la aplicación:\nBuscar o escanear: use la barra de búsqueda para buscar manualmente un dispositivo médico.\nAcciones rápidas: los botones grandes y fáciles de tocar le permiten saltar directamente a la cámara para una nueva exploración, ver sus elementos guardados o explorar su historial reciente.\nBarra de navegación: use el menú inferior para cambiar entre la pantalla de inicio y su perfil personal."
+        },
+        {
+          "title": "Escáner de cámara",
+          "description": "Identificación de su dispositivo: aquí es donde ocurre la funcionalidad principal.\nEscaneo: centre el dispositivo médico o su empaque dentro del marco. La aplicación lo guiará automáticamente para alinear el elemento para obtener los mejores resultados.\nControles: puede activar el flash para una mejor iluminación en entornos oscuros o cambiar entre las cámaras frontal y trasera usando los íconos que rodean el botón del obturador.\nCarga desde la galería: use el ícono de la imagen a la izquierda del obturador para cargar una foto directamente desde la galería de su teléfono."
+        },
+        {
+          "title": "Información guardada",
+          "description": "Su biblioteca personalizada: nunca más pierda la pista de las instrucciones importantes.\nOrganización: cualquier elemento que marque como \"favorito\" o guarde aparecerá aquí, organizado por la fecha en que se agregó.\nBúsqueda: use la barra de búsqueda interna para encontrar rápidamente un dispositivo guardado específico.\nGestión: si desea ordenar, puede usar el botón \"Eliminar todos los elementos guardados\" en la parte inferior para restablecer su biblioteca."
+        },
+        {
+          "title": "Historial",
+          "description": "Seguimiento de su actividad: la pestaña Historial mantiene un registro cronológico de cada dispositivo que ha escaneado.\nLínea de tiempo: los escaneos se agrupan por \"Hoy\", \"Ayer\" y antes, lo que le permite volver a leer las instrucciones de un dispositivo que buscó recientemente.\nAcceso rápido: toque cualquier entrada para volver a la guía detallada de ese elemento específico.\nBorrar historial: puede borrar su actividad reciente en cualquier momento usando el botón rojo en la parte inferior."
+        },
+        {
+          "title": "Detalles del artículo escaneado",
+          "description": "Comprensión del dispositivo: una vez que se identifica un dispositivo, se le presenta una guía completa dividida en tres sencillas secciones:\nAcerca de: una breve descripción de qué es el dispositivo.\nCómo usarlo: instrucciones paso a paso (por ejemplo, cómo administrar una inyección o usar un monitor).\nCuándo usarlo: una guía clara sobre la frecuencia o las situaciones específicas en las que se requiere el dispositivo.\nFunción de guardado: toque el ícono del corazón en la esquina superior derecha para agregar esta información a su lista de guardados."
+        },
+        {
+          "title": "Mi perfil",
+          "description": "Personalización de su experiencia: administre su cuenta y sus datos personales en un solo lugar.\nInformación personal: vea su nombre registrado, correo electrónico, fecha de nacimiento y datos de contacto.\nEditar perfil: toque el botón \"Editar perfil\" para actualizar su información o cambiar su foto de perfil.\nCerrar sesión: salga de su cuenta de forma segura tocando el botón rojo de cierre de sesión en la parte inferior de la pantalla."
+        }
+      ]
+    },
+    "step5": {
+      "title": "Soporte y comentarios",
+      "content": "Tiene preguntas o necesita ayuda? Estamos aquí para ayudar. Si encuentra algún problema con el sitio o tiene sugerencias para mejorar, no dude en contactarnos:\n\nCorreo electrónico: example@gmail.com\nTeléfono: +40 123 456 789\nDisponibilidad: Lunes a viernes, de 09:00 a 17:00"
+    },
+    "footer": {
+      "cta": "¿Listo para comenzar?",
+      "button": "Ir a Inicio →"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "userGuide": {
+    "title": "Ghid de Utilizare",
+    "welcome": "Bun venit la Simplexo! Acest ghid vă va ajuta să profitați la maximum de aplicația noastră de tehnologie medicală. Urmați acești 5 pași simpli pentru a deveni un utilizator expert! 🚀",
+    "step1": {
+      "title": "Cine suntem noi?",
+      "content": "Acest proiect a fost dezvoltat pentru competiția KronTech, organizată de KronSoft. Misiunea noastră este de a reduce decalajul dintre tehnologia medicală complexă și utilizatorul de zi cu zi."
+    },
+    "step2": {
+      "title": "Pentru cine este acest ghid?",
+      "content": "Acest ghid este pentru toată lumea. Fie că sunteți pacient, îngrijitor sau pur și simplu un învățăcel curios, scopul nostru este să ne asigurăm că oricine poate opera dispozitive medicale esențiale - cum ar fi EpiPens, glucometre și kituri de injecție - în siguranță, cu încredere și eficient."
+    },
+    "step3": {
+      "title": "Despre Proiect",
+      "content": "Creat pentru competiția KronTech de către KronSoft, acest proiect își propune să simplifice modul în care oamenii interacționează cu tehnologia medicală. Credem că înțelegerea instrumentelor medicale nu ar trebui să fie dificilă.\n\nDe la glucometre la EpiPens, oferim instrucțiuni clare și accesibile, concepute pentru fiecare utilizator, asigurându-ne că dispozitivele medicale sunt utilizate corect și eficient de oricine, oriunde."
+    },
+    "step4": {
+      "title": "Cum se utilizează aplicația",
+      "slides": [
+        {
+          "title": "Panou de control principal",
+          "description": "Hub-ul Central: Ecranul principal este punctul de plecare. De aici, puteți accesa rapid toate funcțiile principale ale aplicației:\nCăutare sau Scanare: Utilizați bara de căutare pentru a căuta manual un dispozitiv medical.\nAcțiuni Rapide: Butoanele mari, ușor de apăsat, vă permit să săriți direct la Cameră pentru o nouă scanare, să vizualizați elementele Salvate sau să răsfoiți Istoricul recent.\nBara de Navigare: Utilizați meniul de jos pentru a comuta între ecranul principal și Profilul Personal."
+        },
+        {
+          "title": "Scanerul Camerei",
+          "description": "Identificarea Dispozitivului: Aici are loc funcționalitatea de bază.\nScanare: Centrați dispozitivul medical sau ambalajul acestuia în cadru. Aplicația vă va ghida automat pentru a alinia elementul pentru cele mai bune rezultate.\nControale: Puteți comuta blițul pentru o iluminare mai bună în medii întunecate sau puteți comuta între camerele frontală și cea din spate folosind pictogramele din jurul butonului de declanșare.\nÎncărcare din Galerie: Utilizați pictograma de imagine din stânga declanșatorului pentru a încărca o fotografie direct din galeria telefonului."
+        },
+        {
+          "title": "Informații Salvate",
+          "description": "Biblioteca Personalizată: Nu pierdeți niciodată urma instrucțiunilor importante.\nOrganizare: Orice element pe care îl marcați ca favorit sau îl salvați va apărea aici, organizat după data adăugării.\nCăutare: Utilizați bara de căutare internă pentru a găsi rapid un anumit dispozitiv salvat.\nManagement: Dacă doriți să faceți ordine, puteți utiliza butonul „Ștergeți Toate Elementele Salvate” din partea de jos pentru a reseta biblioteca."
+        },
+        {
+          "title": "Istoric",
+          "description": "Urmărirea Activității: Fila Istoric păstrează un jurnal cronologic al fiecărui dispozitiv pe care l-ați scanat.\nCronologie: Scanările sunt grupate după „Astăzi”, „Ieri” și mai devreme, permițându-vă să recitiți instrucțiunile pentru un dispozitiv pe care l-ați căutat recent.\nAcces Rapid: Atingeți orice intrare pentru a reveni la ghidul detaliat pentru acel element specific.\nȘterge Istoric: Puteți șterge activitatea recentă în orice moment folosind butonul roșu din partea de jos."
+        },
+        {
+          "title": "Detalii Articol Scanat",
+          "description": "Înțelegerea Dispozitivului: Odată ce un dispozitiv este identificat, vi se prezintă un ghid cuprinzător, împărțit în trei secțiuni ușoare:\nDespre: O scurtă prezentare a dispozitivului.\nCum se Utilizează: Instrucțiuni pas cu pas (de exemplu, cum se administrează o injecție sau se utilizează un monitor).\nCând se Utilizează: Îndrumări clare privind frecvența sau situațiile specifice în care este necesar dispozitivul.\nFuncția de Salvare: Atingeți pictograma inimă din colțul din dreapta sus pentru a adăuga aceste informații la lista de Salvate."
+        },
+        {
+          "title": "Profilul Meu",
+          "description": "Personalizarea Experienței: Gestionați-vă contul și detaliile personale într-un singur loc.\nInformații Personale: Vizualizați numele înregistrat, e-mailul, data nașterii și detaliile de contact.\nEditare Profil: Atingeți butonul „Editare Profil” pentru a vă actualiza informațiile sau pentru a schimba fotografia de profil.\nDeconectare: Ieșiți în siguranță din cont atingând butonul roșu de deconectare din partea de jos a ecranului."
+        }
+      ]
+    },
+    "step5": {
+      "title": "Suport & Feedback",
+      "content": "Aveți întrebări sau aveți nevoie de asistență? Suntem aici pentru a vă ajuta. Dacă întâmpinați probleme cu site-ul sau aveți sugestii de îmbunătățire, nu ezitați să ne contactați:\n\nEmail: example@gmail.com\nTelefon: +40 123 456 789\nDisponibilitate: Luni – Vineri, 09:00 – 17:00"
+    },
+    "footer": {
+      "cta": "Sunteți gata să începeți?",
+      "button": "Mergi la Pagina Principală →"
+    }
+  }
+}

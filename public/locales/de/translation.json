@@ -1,0 +1,55 @@
+{
+  "userGuide": {
+    "title": "Benutzerhandbuch",
+    "welcome": "Willkommen bei Simplexo! Dieses Handbuch hilft Ihnen, das Beste aus unserer Medizintechnik-App herauszuholen. Befolgen Sie diese 5 einfachen Schritte, um ein Power-User zu werden! 🚀",
+    "step1": {
+      "title": "Wer wir sind",
+      "content": "Dieses Projekt wurde für den KronTech-Wettbewerb entwickelt, der von KronSoft organisiert wird. Unsere Mission ist es, die Lücke zwischen komplexer Medizintechnik und dem alltäglichen Benutzer zu schließen."
+    },
+    "step2": {
+      "title": "Für wen ist das?",
+      "content": "Dieses Handbuch ist für jeden. Ob Sie Patient, Pflegekraft oder einfach nur ein neugieriger Lerner sind, unser Ziel ist es, sicherzustellen, dass jeder wichtige medizinische Geräte – wie EpiPens, Blutzuckermessgeräte und Injektionssets – sicher, selbstbewusst und effektiv bedienen kann."
+    },
+    "step3": {
+      "title": "Über das Projekt",
+      "content": "Dieses Projekt wurde für den KronTech-Wettbewerb von KronSoft erstellt und zielt darauf ab, die Art und Weise zu vereinfachen, wie Menschen mit Medizintechnik interagieren. Wir glauben, dass das Verständnis Ihrer Gesundheitswerkzeuge nicht schwierig sein sollte.\n\nVon Blutzuckermessgeräten bis hin zu EpiPens bieten wir klare, zugängliche Anweisungen, die für jeden Benutzer konzipiert sind, um sicherzustellen, dass medizinische Geräte von jedem und überall ordnungsgemäß und effektiv verwendet werden."
+    },
+    "step4": {
+      "title": "Wie man die App benutzt",
+      "slides": [
+        {
+          "title": "Start-Dashboard",
+          "description": "Das zentrale Hub: Der Startbildschirm ist Ihr Ausgangspunkt. Von hier aus können Sie schnell auf alle Hauptfunktionen der App zugreifen:\nSuchen oder Scannen: Verwenden Sie die Suchleiste, um ein medizinisches Gerät manuell nachzuschlagen.\nSchnellaktionen: Große, leicht zu tippende Schaltflächen ermöglichen es Ihnen, direkt zur Kamera für einen neuen Scan zu springen, Ihre gespeicherten Elemente anzuzeigen oder Ihren letzten Verlauf zu durchsuchen.\nNavigationsleiste: Verwenden Sie das untere Menü, um zwischen dem Startbildschirm und Ihrem persönlichen Profil zu wechseln."
+        },
+        {
+          "title": "Kamera-Scanner",
+          "description": "Identifizieren Ihres Geräts: Hier findet die Kernfunktionalität statt.\nScannen: Zentrieren Sie das medizinische Gerät oder seine Verpackung im Rahmen. Die App führt Sie automatisch, um das Element für die besten Ergebnisse auszurichten.\nSteuerelemente: Sie können den Blitz für eine bessere Beleuchtung in dunklen Umgebungen ein- und ausschalten oder zwischen der vorderen und hinteren Kamera wechseln, indem Sie die Symbole um die Auslösetaste verwenden.\nGalerie-Upload: Verwenden Sie das Bildsymbol links vom Auslöser, um ein Foto direkt aus der Galerie Ihres Telefons hochzuladen."
+        },
+        {
+          "title": "Gespeicherte Informationen",
+          "description": "Ihre personalisierte Bibliothek: Verlieren Sie nie wieder den Überblick über wichtige Anweisungen.\nOrganisation: Jeder Artikel, den Sie als „Favorit“ markieren oder speichern, wird hier angezeigt, geordnet nach dem Datum, an dem er hinzugefügt wurde.\nSuchen: Verwenden Sie die interne Suchleiste, um ein bestimmtes gespeichertes Gerät schnell zu finden.\nVerwaltung: Wenn Sie aufräumen möchten, können Sie die Schaltfläche „Alle gespeicherten Elemente löschen“ unten verwenden, um Ihre Bibliothek zurückzusetzen."
+        },
+        {
+          "title": "Verlauf",
+          "description": "Verfolgen Ihrer Aktivitäten: Die Registerkarte „Verlauf“ führt ein chronologisches Protokoll jedes von Ihnen gescannten Geräts.\nZeitleiste: Scans werden nach „Heute“, „Gestern“ und früher gruppiert, sodass Sie Anweisungen für ein kürzlich nachgeschlagenes Gerät erneut lesen können.\nSchnellzugriff: Tippen Sie auf einen beliebigen Eintrag, um direkt zur detaillierten Anleitung für diesen bestimmten Artikel zu springen.\nVerlauf löschen: Sie können Ihre letzten Aktivitäten jederzeit mit der roten Schaltfläche unten löschen."
+        },
+        {
+          "title": "Details zum gescannten Artikel",
+          "description": "Verständnis des Geräts: Sobald ein Gerät identifiziert ist, wird Ihnen eine umfassende Anleitung in drei einfachen Abschnitten angezeigt:\nÜber: Ein kurzer Überblick darüber, was das Gerät ist.\nAnwendung: Schritt-für-Schritt-Anleitungen (z. B. wie man eine Injektion verabreicht oder einen Monitor verwendet).\nWann zu verwenden: Klare Anleitung zur Häufigkeit oder zu bestimmten Situationen, in denen das Gerät erforderlich ist.\nSpeicherfunktion: Tippen Sie auf das Herzsymbol in der oberen rechten Ecke, um diese Informationen zu Ihrer gespeicherten Liste hinzuzufügen."
+        },
+        {
+          "title": "Mein Profil",
+          "description": "Personalisieren Ihrer Erfahrung: Verwalten Sie Ihr Konto und Ihre persönlichen Daten an einem Ort.\nPersönliche Informationen: Zeigen Sie Ihren registrierten Namen, Ihre E-Mail-Adresse, Ihr Geburtsdatum und Ihre Kontaktdaten an.\nProfil bearbeiten: Tippen Sie auf die Schaltfläche „Profil bearbeiten“, um Ihre Informationen zu aktualisieren oder Ihr Profilbild zu ändern.\nAbmelden: Melden Sie sich sicher von Ihrem Konto ab, indem Sie auf die rote Abmeldeschaltfläche am unteren Bildschirmrand tippen."
+        }
+      ]
+    },
+    "step5": {
+      "title": "Support & Feedback",
+      "content": "Haben Sie Fragen oder benötigen Sie Hilfe? Wir sind hier um zu helfen. Wenn Sie auf Probleme mit der Website stoßen oder Verbesserungsvorschläge haben, zögern Sie bitte nicht, uns zu kontaktieren:\n\nE-Mail: example@gmail.com\nTelefon: +40 123 456 789\nVerfügbarkeit: Montag – Freitag, 09:00 – 17:00"
+    },
+    "footer": {
+      "cta": "Bereit anzufangen?",
+      "button": "Gehe zu Startseite →"
+    }
+  }
+}

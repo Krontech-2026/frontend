@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Page(){
     const [email, setEmail] = useState("");
@@ -19,12 +20,12 @@ export default function Page(){
             router.push("/HomePage");
         }
     };
-    
+
     return(
         <div className="min-h-full bg-linear-to-br from-white via-emerald-50 to-white p-4">
             <div className="flex items-center justify-center mb-2 animate-fade-in">
-                <div className="border rounded-3xl shadow-xl bg-linear-to-r from-emerald-950 to-emerald-900 py-6 px-8 w-full max-w-md hover-lift">
-                    <h1 className="text-emerald-400 text-4xl text-center font-bold">Simplexo</h1>
+                <div className="border rounded-3xl shadow-xl bg-linear-to-r from-emerald-950 to-emerald-900 py-6 px-8 w-full max-w-md hover-lift flex items-center justify-center">
+                    <Image src="/Logo/SimplexoLogo.png" alt="Simplexo Logo" width={200} height={60} className="object-contain" />
                 </div>
             </div>
 
@@ -80,7 +81,7 @@ export default function Page(){
                                 type="button" 
                                 aria-label="Forgot password"
                             >
-                                Forgot?
+                                Forgot password?
                             </button>
                         </div>
 

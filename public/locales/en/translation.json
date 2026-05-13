@@ -1,0 +1,55 @@
+{
+  "userGuide": {
+    "title": "User Guide",
+    "welcome": "Welcome to Simplexo! This guide will help you get the most out of our medical technology app. Follow these 5 simple steps to become a power user! 🚀",
+    "step1": {
+      "title": "Who are we?",
+      "content": "This project was developed for the KronTech competition, organized by KronSoft. Our mission is to bridge the gap between complex medical technology and the everyday user."
+    },
+    "step2": {
+      "title": "Who is this for?",
+      "content": "This guide is for everyone. Whether you are a patient, a caregiver, or simply a curious learner, our goal is to ensure that anyone can operate essential medical devices—such as EpiPens, glucose meters, and injection kits—safely, confidently, and effectively."
+    },
+    "step3": {
+      "title": "About the Project",
+      "content": "Created for the KronTech competition by KronSoft, this project aims to simplify the way people interact with medical technology. We believe that understanding your health tools shouldn't be difficult.\n\nFrom glucose meters to EpiPens, we provide clear, accessible instructions designed for every user, ensuring medical devices are used properly and effectively by anyone, anywhere."
+    },
+    "step4": {
+      "title": "How to use the app",
+      "slides": [
+        {
+          "title": "Home Dashboard",
+          "description": "The Central Hub: The Home screen is your starting point. From here, you can quickly access all the app’s main features:\nSearch or Scan: Use the search bar to manually look up a medical device.\nQuick Actions: Large, easy-to-tap buttons allow you to jump straight to the Camera for a new scan, view your Saved items, or browse your recent History.\nNavigation Bar: Use the bottom menu to switch between the Home screen and your Personal Profile."
+        },
+        {
+          "title": "Camera Scanner",
+          "description": "Identifying Your Device: This is where the core functionality happens.\nScanning: Center the medical device or its packaging within the frame. The app will automatically guide you to align the item for the best results.\nControls: You can toggle the flash for better lighting in dark environments or switch between front and rear cameras using the icons surrounding the shutter button.\nGallery Upload: Use the image icon to the left of the shutter to upload a photo directly from your phone's gallery."
+        },
+        {
+          "title": "Saved Info",
+          "description": "Your Personalized Library: Never lose track of important instructions again.\nOrganization: Any item you \"favorite\" or save will appear here, organized by the date it was added.\nSearch: Use the internal search bar to find a specific saved device quickly.\nManagement: If you want to declutter, you can use the \"Delete All Saved Items\" button at the bottom to reset your library."
+        },
+        {
+          "title": "History",
+          "description": "Tracking Your Activity: The History tab keeps a chronological log of every device you have scanned.\nTimeline: Scans are grouped by \"Today,\" \"Yesterday,\" and earlier, allowing you to re-read instructions for a device you looked up recently.\nQuick Access: Tap any entry to jump back into the detailed guide for that specific item.\nClear History: You can wipe your recent activity at any time using the red button at the bottom."
+        },
+        {
+          "title": "Scanned Item Details",
+          "description": "Understanding the Device: Once a device is identified, you are presented with a comprehensive guide broken down into three easy sections:\nAbout: A brief overview of what the device is.\nHow to Use: Step-by-step instructions (e.g., how to administer an injection or use a monitor).\nWhen to Use: Clear guidance on the frequency or specific situations where the device is required.\nSave Feature: Tap the heart icon in the top right corner to add this info to your Saved list."
+        },
+        {
+          "title": "My Profile",
+          "description": "Personalizing Your Experience: Manage your account and personal details in one place.\nPersonal Information: View your registered name, email, date of birth, and contact details.\nEdit Profile: Tap the \"Edit Profile\" button to update your information or change your profile picture.\nLogout: Securely exit your account by tapping the red logout button at the bottom of the screen."
+        }
+      ]
+    },
+    "step5": {
+      "title": "Support & Feedback",
+      "content": "Have questions or need assistance? We are here to help. If you encounter any issues with the site or have suggestions for improvement, please don't hesitate to reach out to us:\n\nEmail: example@gmail.com\nPhone: +40 123 456 789\nAvailability: Monday – Friday, 09:00 – 17:00"
+    },
+    "footer": {
+      "cta": "Ready to get started?",
+      "button": "Go to Home →"
+    }
+  }
+}

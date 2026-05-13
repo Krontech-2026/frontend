@@ -17,13 +17,16 @@ export default function Page(){
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const router = useRouter();
 
-    const isSignUpEnabled = 
-        firstName.trim() !== "" && 
-        lastName.trim() !== "" && 
-        email.trim() !== "" && 
-        password.trim() !== "" && 
-        confirmPassword.trim() !== "" &&
-        password === confirmPassword;
+    const isFormComplete =
+        firstName.trim() !== "" &&
+        lastName.trim() !== "" &&
+        email.trim() !== "" &&
+        password.trim() !== "" &&
+        confirmPassword.trim() !== "";
+
+    const passwordsMatch = password === confirmPassword;
+    const showPasswordError = confirmPassword.trim() !== "" && !passwordsMatch;
+    const isSignUpEnabled = isFormComplete && passwordsMatch;
 
     const handleSignUp = () => {
         if (isSignUpEnabled) {
@@ -101,7 +104,7 @@ export default function Page(){
                                 <button
                                     type="button"
                                     onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors"
+                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors cursor-pointer"
                                 >
                                     {showPassword ? <FaEyeSlash /> : <FaEye />}
                                 </button>
@@ -121,26 +124,26 @@ export default function Page(){
                                 <button
                                     type="button"
                                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors"
+                                    className="absolute right-4 top-3.5 text-emerald-300 hover:text-emerald-200 transition-colors cursor-pointer"
                                 >
                                     {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
                                 </button>
                             </div>
                         </div>
 
-                        {password && confirmPassword && password !== confirmPassword && (
+                        {showPasswordError && (
                             <div key="password-mismatch" className="bg-red-500 bg-opacity-20 border border-red-500 text-red-200 rounded-full px-4 py-2 text-center text-sm font-semibold animate-pulse">
                                 Passwords don&apos;t match!
                             </div>
                         )}
 
-                        <button 
+                        <button
                             onClick={handleSignUp}
                             disabled={!isSignUpEnabled}
                             type="button"
                             className={`text-lg rounded-full py-3 px-8 text-white font-semibold transition-all duration-300 w-full mt-4 ${
-                                isSignUpEnabled 
-                                    ? 'bg-emerald-500 cursor-pointer hover:bg-emerald-400 hover:shadow-lg active:scale-95 hover-lift' 
+                                isSignUpEnabled
+                                    ? 'bg-emerald-500 cursor-pointer hover:bg-emerald-400 hover:shadow-lg active:scale-95 hover-lift'
                                     : 'bg-gray-600 cursor-not-allowed opacity-50'
                             }`}
                         >
@@ -157,16 +160,16 @@ export default function Page(){
                         </div>
 
                         <div className="flex items-center justify-center gap-4">
-                            <button 
-                                className="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 px-6 rounded-full cursor-pointer hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold" 
+                            <button
+                                className="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 px-6 rounded-full cursor-pointer hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold"
                                 type="button"
                             >
                                 <FcGoogle className="text-2xl" />
                                 <span className="text-sm">Google</span>
                             </button>
 
-                            <button 
-                                className="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-full cursor-pointer hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold" 
+                            <button
+                                className="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-full cursor-pointer hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all active:scale-95 font-semibold"
                                 type="button"
                             >
                                 <FaFacebook className="text-2xl" />
@@ -183,10 +186,6 @@ export default function Page(){
                     </Link>
                 </div>
             </div>
-
-            {/* Decorative Elements */}
-            <div className="fixed -bottom-20 -right-20 w-96 h-96 bg-linear-to-br from-emerald-600 to-emerald-900 rounded-full opacity-5 pointer-events-none"></div>
-            <div className="fixed -top-20 -left-20 w-80 h-80 bg-linear-to-br from-emerald-400 to-emerald-700 rounded-full opacity-5 pointer-events-none"></div>
         </div>
     );
 }
