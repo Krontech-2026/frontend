@@ -30,8 +30,8 @@ function EpiPenContent() {
     return (
         <div className="flex flex-col flex-1 items-center bg-linear-to-br from-emerald-950 via-emerald-900 to-emerald-950 font-sans min-h-screen">
             <div className="w-full max-w-3xl px-4 pt-8">
-                <div className="w-full bg-linear-to-r from-emerald-950 to-emerald-900 rounded-4xl px-6 py-4 text-center text-emerald-400 text-3xl font-bold shadow-2xl hover-lift flex items-center justify-center">
-                    <Image src="/Logo/SimplexoLogo.png" alt="Simplexo Logo" width={120} height={40} className="object-contain" />
+                <div className="w-full bg-linear-to-r from-emerald-950 to-emerald-900 rounded-4xl px-6 py-10 text-center text-emerald-400 text-3xl font-bold shadow-2xl hover-lift">
+                    Simplexo
                 </div>
             </div>
 
@@ -49,7 +49,7 @@ function EpiPenContent() {
                 </div>
 
                 <div className="w-full h-72 bg-linear-to-br from-gray-400 to-gray-600 rounded-3xl flex items-center justify-center shadow-2xl border-4 border-emerald-200 relative overflow-hidden">
-                    <Image src="/ScannedItemPhotos/epipen.jpg" alt="EpiPen" layout="fill" objectFit="cover" />
+                    <Image src="/ScannedItemPhotos/EpiPen.jpg" alt="EpiPen" layout="fill" objectFit="cover" />
                 </div>
 
                 <div className="w-full space-y-6">

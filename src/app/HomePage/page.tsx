@@ -39,7 +39,7 @@ export default function Home() {
         <div className="flex flex-col flex-1 items-center bg-linear-to-br from-emerald-950 via-emerald-900 to-emerald-950 font-sans min-h-screen">
             <div className="w-full max-w-3xl px-4 pt-8">
                 <div className="w-full bg-linear-to-r from-emerald-950 to-emerald-900 rounded-4xl px-6 py-4 text-emerald-400 text-3xl font-bold shadow-2xl hover-lift flex justify-between items-center">
-                    <Image src="/Logo/SimplexoLogo.png" alt="Simplexo Logo" width={120} height={40} className="object-contain" />
+                    <Image src="/Logo/SimplexoCircularLogo.png" alt="Simplexo Logo" width={120} height={40} className="object-contain" />
                     <Link href="/UserGuideMenu" className="bg-emerald-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-emerald-400 hover:shadow-lg transition-all active:scale-95 text-sm cursor-pointer">
                         {t('Guide')}
                     </Link>
