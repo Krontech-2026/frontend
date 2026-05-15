@@ -1,0 +1,55 @@
+{
+  "userGuide": {
+    "title": "Guide de l'utilisateur",
+    "welcome": "Bienvenue sur Simplexo ! Ce guide vous aidera à tirer le meilleur parti de notre application de technologie médicale. Suivez ces 5 étapes simples pour devenir un utilisateur expérimenté ! 🚀",
+    "step1": {
+      "title": "Qui sommes-nous ?",
+      "content": "Ce projet a été développé pour le concours KronTech, organisé par KronSoft. Notre mission est de combler le fossé entre la technologie médicale complexe et l'utilisateur de tous les jours."
+    },
+    "step2": {
+      "title": "À qui s'adresse ce guide ?",
+      "content": "Ce guide s'adresse à tout le monde. Que vous soyez un patient, un soignant ou simplement un apprenant curieux, notre objectif est de garantir que n'importe qui puisse utiliser des dispositifs médicaux essentiels - tels que les EpiPens, les glucomètres et les kits d'injection - en toute sécurité, en toute confiance et de manière efficace."
+    },
+    "step3": {
+      "title": "À propos du projet",
+      "content": "Créé pour le concours KronTech par KronSoft, ce projet vise à simplifier la manière dont les gens interagissent avec la technologie médicale. Nous pensons que la compréhension de vos outils de santé ne devrait pas être difficile.\n\nDes glucomètres aux EpiPens, nous fournissons des instructions claires et accessibles, conçues pour chaque utilisateur, garantissant que les dispositifs médicaux sont utilisés correctement et efficacement par n'importe qui, n'importe où."
+    },
+    "step4": {
+      "title": "Comment utiliser l'application",
+      "slides": [
+        {
+          "title": "Tableau de bord d'accueil",
+          "description": "Le hub central : L'écran d'accueil est votre point de départ. De là, vous pouvez accéder rapidement à toutes les fonctionnalités principales de l'application :\nRechercher ou analyser : utilisez la barre de recherche pour rechercher manuellement un appareil médical.\nActions rapides : de grands boutons faciles à toucher vous permettent de passer directement à l'appareil photo pour une nouvelle numérisation, d'afficher vos éléments enregistrés ou de parcourir votre historique récent.\nBarre de navigation : utilisez le menu du bas pour basculer entre l'écran d'accueil et votre profil personnel."
+        },
+        {
+          "title": "Scanner de caméra",
+          "description": "Identification de votre appareil : c'est ici que se déroule la fonctionnalité principale.\nNumérisation : centrez l'appareil médical ou son emballage dans le cadre. L'application vous guidera automatiquement pour aligner l'élément pour les meilleurs résultats.\nContrôles : vous pouvez activer le flash pour un meilleur éclairage dans les environnements sombres ou basculer entre les caméras avant et arrière à l'aide des icônes entourant le bouton de l'obturateur.\nTéléchargement depuis la galerie : utilisez l'icône d'image à gauche de l'obturateur pour télécharger une photo directement depuis la galerie de votre téléphone."
+        },
+        {
+          "title": "Informations enregistrées",
+          "description": "Votre bibliothèque personnalisée : ne perdez plus jamais la trace des instructions importantes.\nOrganisation : tout élément que vous marquez comme « favori » ou que vous enregistrez apparaîtra ici, organisé par date d'ajout.\nRecherche : utilisez la barre de recherche interne pour trouver rapidement un appareil enregistré spécifique.\nGestion : si vous souhaitez désencombrer, vous pouvez utiliser le bouton « Supprimer tous les éléments enregistrés » en bas pour réinitialiser votre bibliothèque."
+        },
+        {
+          "title": "Historique",
+          "description": "Suivi de votre activité : l'onglet Historique conserve un journal chronologique de chaque appareil que vous avez scanné.\nChronologie : les analyses sont regroupées par « Aujourd'hui », « Hier » et avant, ce qui vous permet de relire les instructions d'un appareil que vous avez consulté récemment.\nAccès rapide : appuyez sur n'importe quelle entrée pour revenir au guide détaillé de cet élément spécifique.\nEffacer l'historique : vous pouvez effacer votre activité récente à tout moment à l'aide du bouton rouge en bas."
+        },
+        {
+          "title": "Détails de l'élément numérisé",
+          "description": "Comprendre l'appareil : une fois qu'un appareil est identifié, un guide complet vous est présenté, divisé en trois sections simples :\nÀ propos : un bref aperçu de ce qu'est l'appareil.\nComment l'utiliser : instructions étape par étape (par exemple, comment administrer une injection ou utiliser un moniteur).\nQuand l'utiliser : des instructions claires sur la fréquence ou les situations spécifiques dans lesquelles l'appareil est requis.\nFonction de sauvegarde : appuyez sur l'icône en forme de cœur dans le coin supérieur droit pour ajouter ces informations à votre liste d'éléments enregistrés."
+        },
+        {
+          "title": "Mon profil",
+          "description": "Personnalisation de votre expérience : gérez votre compte et vos informations personnelles en un seul endroit.\nInformations personnelles : affichez votre nom enregistré, votre adresse e-mail, votre date de naissance et vos coordonnées.\nModifier le profil : appuyez sur le bouton « Modifier le profil » pour mettre à jour vos informations ou modifier votre photo de profil.\nDéconnexion : quittez votre compte en toute sécurité en appuyant sur le bouton de déconnexion rouge en bas de l'écran."
+        }
+      ]
+    },
+    "step5": {
+      "title": "Support et commentaires",
+      "content": "Vous avez des questions ou besoin d'aide ? Nous sommes là pour vous aider. Si vous rencontrez des problèmes avec le site ou si vous avez des suggestions d'amélioration, n'hésitez pas à nous contacter :\n\nE-mail : example@gmail.com\nTéléphone : +40 123 456 789\nDisponibilité : Lundi – Vendredi, 09:00 – 17:00"
+    },
+    "footer": {
+      "cta": "Prêt à commencer ?",
+      "button": "Aller à l'accueil →"
+    }
+  }
+}
