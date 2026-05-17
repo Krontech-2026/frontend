@@ -26,14 +26,14 @@ export default function Home() {
                     <Link href="/HomePage" className="absolute left-0 hover-scale">
                         <FontAwesomeIcon icon={faArrowLeft} className="text-emerald-600 text-2xl cursor-pointer hover:text-emerald-500 transition-colors" />
                     </Link>
-                    <h1 className="text-emerald-600 text-3xl font-bold">📜 History</h1>
+                    <h1 className="text-emerald-600 text-3xl font-bold">Istoric</h1>
                 </div>
 
                 <div className="w-full flex items-center space-x-2">
                     <div className="flex-1 flex items-center bg-linear-to-r from-emerald-950 to-emerald-900 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all">
                         <input
                             type="text"
-                            placeholder="Search your scans..."
+                            placeholder="Caută scanările tale..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="w-full bg-transparent text-white placeholder-emerald-300 rounded-full px-6 py-3 focus:outline-none font-medium"
@@ -47,7 +47,7 @@ export default function Home() {
                 
                 <div className="w-full flex flex-col space-y-4">
                     <h2 className="text-emerald-600 font-bold text-lg px-2 flex items-center gap-2">
-                        <span className="text-xl">☀️</span> Today
+                        <span className="text-xl"></span> Azi
                     </h2>
                     
                     {[...Array(3)].map((_, i) => (
@@ -58,7 +58,7 @@ export default function Home() {
                                         <FontAwesomeIcon icon={faClock} />
                                     </div>
                                     <div className="flex-1">
-                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">How to use yap yap</p>
+                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">Cum să use yap yap</p>
                                         <p className="text-sm text-emerald-300">08:30 PM</p>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
                 <div className="w-full flex flex-col space-y-4 mt-6">
                     <h2 className="text-emerald-600 font-bold text-lg px-2 flex items-center gap-2">
-                        <span className="text-xl">🌙</span> Yesterday
+                        <span className="text-xl"></span> Ieri
                     </h2>
                     
                     {[...Array(3)].map((_, i) => (
@@ -87,7 +87,7 @@ export default function Home() {
                                     </div>
                                     <div className="flex-1">
                                         <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">yap yap</p>
-                                        <p className="text-sm text-emerald-300">08:30 PM · Yesterday</p>
+                                        <p className="text-sm text-emerald-300">08:30 PM · Ieri</p>
                                     </div>
                                 </div>
                                 <button 
@@ -103,7 +103,7 @@ export default function Home() {
 
                 <button className="w-full mt-8 bg-linear-to-r from-red-500 to-red-600 rounded-full py-4 text-white font-bold hover:from-red-400 hover:to-red-500 hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md cursor-pointer">
                     <FontAwesomeIcon icon={faTrash} />
-                    Clear History
+                    Șterge istoricul
                 </button>
             </main>
         </div>

@@ -36,7 +36,7 @@ export default function Page(){
                         href="/RegisterPage"
                         className="bg-linear-to-r from-emerald-500 to-emerald-600 text-white text-2xl rounded-full py-4 text-center font-bold hover:from-emerald-400 hover:to-emerald-500 hover:shadow-2xl transition-all active:scale-95 hover-lift block"
                     >
-                        ✨ Sign Up
+                        Sign Up
                     </Link>
 
 
@@ -44,7 +44,7 @@ export default function Page(){
                         href="/LoginPage"
                         className="bg-linear-to-r from-white to-gray-100 text-emerald-950 text-2xl rounded-full py-4 text-center font-bold hover:from-gray-50 hover:to-gray-200 hover:shadow-2xl transition-all active:scale-95 hover-lift block border-2 border-white"
                     >
-                        🔐 Log In
+                        Log In
                     </Link>
                 </div>
             </div>

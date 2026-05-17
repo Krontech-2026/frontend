@@ -55,7 +55,7 @@ function ScannedItemContent() {
                         <p>Just a mad cat yap yap yap</p>
                     </InfoSection>
 
-                    <InfoSection title="📖 How to use">
+                    <InfoSection title="How to use?">
                         <ul className="list-disc list-inside space-y-2">
                             <li>We don&apos;t use a cot wtf</li>
                             <li>We use a medical device</li>
@@ -63,7 +63,7 @@ function ScannedItemContent() {
                         </ul>
                     </InfoSection>
 
-                    <InfoSection title="🤔 When to use?">
+                    <InfoSection title="When to use?">
                         <p>Every single day.</p>
                     </InfoSection>
                 </div>

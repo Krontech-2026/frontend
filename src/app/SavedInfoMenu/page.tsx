@@ -26,14 +26,14 @@ export default function Home() {
                     <Link href="/HomePage" className="absolute left-0 hover-scale">
                         <FontAwesomeIcon icon={faArrowLeft} className="text-emerald-600 text-2xl cursor-pointer hover:text-emerald-500 transition-colors" />
                     </Link>
-                    <h1 className="text-emerald-600 text-3xl font-bold">💾 Saved Info</h1>
+                    <h1 className="text-emerald-600 text-3xl font-bold">Informații salvate</h1>
                 </div>
 
                 <div className="w-full flex items-center space-x-2">
                     <div className="flex-1 flex items-center bg-linear-to-r from-emerald-950 to-emerald-900 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all">
                         <input
                             type="text"
-                            placeholder="Search saved items..."
+                            placeholder="Caută obiectele salvate..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="w-full bg-transparent text-white placeholder-emerald-300 rounded-full px-6 py-3 focus:outline-none font-medium"
@@ -54,10 +54,10 @@ export default function Home() {
                                 </div>
                                 <div className="flex-1">
                                     <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">
-                                        {i === 0 ? "How to use yap yap" : "yap yap"}
+                                        {i === 0 ? "Cum să folosești yap yap" : "yap yap"}
                                     </p>
                                     <p className="text-sm text-emerald-300">{26 - i} April 2026</p>
-                                    <p className="text-xs text-emerald-400 mt-1">📊 Scanned Item</p>
+                                    <p className="text-xs text-emerald-400 mt-1">Obiect scanat</p>
                                 </div>
                                 <button 
                                     onClick={handleItemClick} 
@@ -72,8 +72,8 @@ export default function Home() {
 
                 <button className="w-full mt-8 bg-linear-to-r from-red-500 to-red-600 rounded-full py-4 text-white font-bold hover:from-red-400 hover:to-red-500 hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md">
                     <FontAwesomeIcon icon={faTrash} />
-                    Delete All Saved Items
-                </button>1
+                    Șterge toate obiectele salvate
+                </button>
             </main>
         </div>
     );
