@@ -39,7 +39,7 @@ export default function Page(){
         <div className="min-h-full bg-linear-to-br from-white via-emerald-50 to-white p-4 overflow-y-auto">
             <div className="flex items-center justify-center mb-2 animate-fade-in">
                 <div className="w-40 h-40 rounded-full shadow-xl bg-linear-to-r from-emerald-950 to-emerald-900 p-4 hover-lift flex items-center justify-center overflow-hidden">
-                    <Image src="/Logo/SimplexoCircular  Logo.png" alt="Simplexo Logo" width={200} height={60} className="object-contain rounded-full" />
+                    <Image src="/Logo/SimplexoCircularLogo.png" alt="Simplexo Logo" width={200} height={60} className="object-contain rounded-full" />
                 </div>
             </div>
 
