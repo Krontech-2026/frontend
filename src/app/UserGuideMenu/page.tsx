@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faUsers, faUniversalAccess, faLightbulb, faBookOpen, faHeadset, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';

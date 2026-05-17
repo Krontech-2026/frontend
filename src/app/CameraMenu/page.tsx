@@ -20,7 +20,6 @@ interface DeviceResult {
 export default function CameraMenu() {
     const videoRef = useRef<HTMLVideoElement>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const fileInputRef = useRef<HTMLInputElement>(null);
 
     const [stream, setStream] = useState<MediaStream | null>(null);
     const [cameraActive, setCameraActive] = useState(false);
@@ -74,7 +73,8 @@ export default function CameraMenu() {
             setResult(null);
             setError(null);
             setCapturedImage(null);
-        } catch {
+        } catch (err) {
+            console.error('Camera error:', err);
             setError('Nu s-a putut accesa camera. Verificați permisiunile.');
         }
     }, [facingMode, stream]);
@@ -119,17 +119,10 @@ export default function CameraMenu() {
         analyzeImage(dataUrl);
     }, [stopCamera, analyzeImage]);
 
-    const handleGallery = useCallback(() => {
-        fileInputRef.current?.click();
-    }, []);
-
     const handleFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
         if (!file) return;
-
-        // Reset input so same file can be selected again
         e.target.value = '';
-
         const reader = new FileReader();
         reader.onload = (ev) => {
             const dataUrl = ev.target?.result as string;
@@ -155,13 +148,6 @@ export default function CameraMenu() {
     return (
         <div className="flex flex-col flex-1 items-center bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 font-sans dark:bg-black min-h-screen">
             <canvas ref={canvasRef} className="hidden" />
-            <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                className="hidden"
-                onChange={handleFileChange}
-            />
 
             {/* Header */}
             <div className="w-full max-w-3xl px-4 pt-8">
@@ -241,14 +227,25 @@ export default function CameraMenu() {
                     </p>
                 )}
 
-                {/* Controls — vizibile mereu când nu e capturedImage */}
+                {/* Controls */}
                 {!capturedImage && (
                     <div className="flex items-center justify-center space-x-8 pb-4">
-                        <button type="button" aria-label="Open gallery" onClick={handleGallery}
-                            className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 flex items-center justify-center text-emerald-400 shadow-lg hover:shadow-xl hover:scale-125 transition-all active:scale-95">
-                            <FontAwesomeIcon icon={faImage} className="text-2xl" />
-                        </button>
 
+                        {/* Buton galerie cu label nativ — fără JavaScript */}
+                        <label
+                            htmlFor="gallery-input"
+                            className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 flex items-center justify-center text-emerald-400 shadow-lg hover:shadow-xl hover:scale-125 transition-all active:scale-95 cursor-pointer">
+                            <FontAwesomeIcon icon={faImage} className="text-2xl" />
+                            <input
+                                id="gallery-input"
+                                type="file"
+                                accept="image/*"
+                                className="hidden"
+                                onChange={handleFileChange}
+                            />
+                        </label>
+
+                        {/* Shutter / Start camera */}
                         <button type="button" aria-label="Take photo"
                             onClick={cameraActive ? capturePhoto : startCamera}
                             className="focus:outline-none cursor-pointer">
@@ -259,6 +256,7 @@ export default function CameraMenu() {
                             </div>
                         </button>
 
+                        {/* Rotate */}
                         <button type="button" aria-label="Rotate camera" onClick={rotateCamera}
                             className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 flex items-center justify-center text-emerald-400 shadow-lg hover:shadow-xl hover:scale-125 transition-all active:scale-95 hover:rotate-180">
                             <FontAwesomeIcon icon={faSyncAlt} className="text-2xl" />
