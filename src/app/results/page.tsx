@@ -25,7 +25,6 @@ type AnalysisResult = {
   eroare?: string;
 };
 
-// Culori per categorie
 const CATEGORY_STYLES: Record<string, { bg: string; text: string; dot: string }> = {
   Cardiovascular: {
     bg: 'bg-rose-50',
@@ -74,7 +73,6 @@ export default function ResultsPage() {
       return;
     }
     if (photo) setPhotoUrl(photo);
-    // Animație de intrare
     setTimeout(() => setVisible(true), 50);
   }, [router]);
 
@@ -89,7 +87,6 @@ export default function ResultsPage() {
         visible ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      {/* ── Header ── */}
       <div className="w-full max-w-2xl px-4 pt-8">
         <div className="flex items-center justify-between">
           <Link
@@ -111,7 +108,6 @@ export default function ResultsPage() {
         </div>
       </div>
 
-      {/* ── Eroare ── */}
       {result.eroare ? (
         <div className="w-full max-w-2xl px-4 mt-10">
           <div className="bg-rose-50 border border-rose-200 rounded-3xl p-8 text-center">
@@ -130,11 +126,7 @@ export default function ResultsPage() {
         </div>
       ) : (
         <div className="w-full max-w-2xl px-4 mt-6 space-y-4">
-
-          {/* ── Card principal ── */}
           <div className="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
-
-            {/* Poza făcută */}
             {photoUrl && (
               <div className="w-full h-52 overflow-hidden relative">
                 <img
@@ -147,7 +139,6 @@ export default function ResultsPage() {
             )}
 
             <div className="p-6">
-              {/* Categorie badge */}
               {result.categorie && (
                 <div className="mb-3">
                   <span
@@ -158,20 +149,14 @@ export default function ResultsPage() {
                   </span>
                 </div>
               )}
-
-              {/* Titlu */}
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
                 {result.aparat}
               </h1>
-
-              {/* Descriere */}
               {result.descriere && (
                 <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                   {result.descriere}
                 </p>
               )}
-
-              {/* Valori normale */}
               {result.valori_normale && result.valori_normale !== 'N/A' && (
                 <div className="mt-4 flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl px-4 py-3">
                   <FontAwesomeIcon
@@ -190,8 +175,6 @@ export default function ResultsPage() {
               )}
             </div>
           </div>
-
-          {/* ── Pași de utilizare ── */}
           {result.pasi && result.pasi.length > 0 && (
             <div className="bg-white dark:bg-zinc-900 rounded-3xl p-6 shadow-xl">
               <div className="flex items-center gap-2 mb-5">
@@ -213,12 +196,9 @@ export default function ResultsPage() {
                       animationDelay: `${i * 80}ms`,
                     }}
                   >
-                    {/* Număr pas */}
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-500 text-white text-sm font-bold flex items-center justify-center shadow-md shadow-emerald-200">
                       {i + 1}
                     </div>
-
-                    {/* Linie verticală (nu pe ultimul) */}
                     <div className="flex flex-col flex-1 min-w-0">
                       <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                         {pas}
@@ -230,8 +210,6 @@ export default function ResultsPage() {
                   </div>
                 ))}
               </div>
-
-              {/* Checkmark final */}
               <div className="mt-6 flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
                 <FontAwesomeIcon icon={faCircleCheck} className="text-lg" />
                 <span className="text-sm font-semibold">
@@ -240,8 +218,6 @@ export default function ResultsPage() {
               </div>
             </div>
           )}
-
-          {/* ── Avertismente ── */}
           {result.avertismente && result.avertismente.length > 0 && (
             <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-3xl p-6 shadow-xl">
               <div className="flex items-center gap-2 mb-4">
@@ -269,8 +245,6 @@ export default function ResultsPage() {
               </div>
             </div>
           )}
-
-          {/* ── Buton Poză nouă ── */}
           <Link
             href="/camera"
             className="flex items-center justify-center gap-3 w-full py-4 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-bold text-lg rounded-3xl shadow-xl shadow-emerald-900/40 transition-all"
@@ -278,8 +252,6 @@ export default function ResultsPage() {
             <FontAwesomeIcon icon={faCamera} />
             Analizează alt aparat
           </Link>
-
-          {/* Disclaimer */}
           <p className="text-center text-xs text-emerald-700/60 px-4 pb-2">
             Informațiile sunt orientative. Consultați întotdeauna un medic pentru diagnostic.
           </p>
