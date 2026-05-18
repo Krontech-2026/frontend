@@ -54,7 +54,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex-1">
                                     <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">
-                                        {i === 0 ? "Cum să folosești yap yap" : "yap yap"}
+                                        {i === 0 ? "Cum să folosești spirometru" : "(Aparat medical)"}
                                     </p>
                                     <p className="text-sm text-emerald-300">{26 - i} April 2026</p>
                                     <p className="text-xs text-emerald-400 mt-1">Obiect scanat</p>

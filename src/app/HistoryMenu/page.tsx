@@ -58,7 +58,7 @@ export default function Home() {
                                         <FontAwesomeIcon icon={faClock} />
                                     </div>
                                     <div className="flex-1">
-                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">Cum să use yap yap</p>
+                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">Cum să folosești...</p>
                                         <p className="text-sm text-emerald-300">08:30 PM</p>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ export default function Home() {
                                         <FontAwesomeIcon icon={faClock} />
                                     </div>
                                     <div className="flex-1">
-                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">yap yap</p>
+                                        <p className="font-bold text-lg group-hover:text-emerald-300 transition-colors">Lorem ipsum dolor sit amet...</p>
                                         <p className="text-sm text-emerald-300">08:30 PM · Ieri</p>
                                     </div>
                                 </div>
