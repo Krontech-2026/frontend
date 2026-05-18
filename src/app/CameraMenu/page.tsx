@@ -148,8 +148,6 @@ export default function CameraMenu() {
     return (
         <div className="flex flex-col flex-1 items-center bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 font-sans dark:bg-black min-h-screen">
             <canvas ref={canvasRef} className="hidden" />
-
-            {/* Header */}
             <div className="w-full max-w-3xl px-4 pt-8">
                 <div className="w-full bg-gradient-to-r from-emerald-950 to-emerald-900 rounded-4xl px-6 py-10 text-center text-emerald-400 text-3xl font-bold shadow-2xl">
                     Simplexo
@@ -157,8 +155,6 @@ export default function CameraMenu() {
             </div>
 
             <main className="flex flex-1 w-full max-w-3xl flex-col items-center space-y-6 p-4 bg-white dark:bg-zinc-900 rounded-3xl mt-6 mb-6 shadow-2xl">
-
-                {/* Top bar */}
                 <div className="w-full flex items-center justify-between px-4 pb-4 border-b-2 border-emerald-100">
                     <Link href="/HomePage" aria-label="Back"
                         className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 text-emerald-400 flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all active:scale-95">
@@ -173,8 +169,6 @@ export default function CameraMenu() {
                         <FontAwesomeIcon icon={faBolt} className="text-lg" />
                     </button>
                 </div>
-
-                {/* Camera / Preview area */}
                 <div className="w-full rounded-3xl overflow-hidden border-4 border-emerald-100 relative bg-gradient-to-b from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-800"
                     style={{ minHeight: '320px', maxHeight: '400px' }}>
 
@@ -217,8 +211,6 @@ export default function CameraMenu() {
                         </button>
                     )}
                 </div>
-
-                {/* Instruction */}
                 {!capturedImage && !loading && (
                     <p className="text-emerald-600 text-center px-6 text-base font-semibold leading-relaxed">
                         {cameraActive
@@ -226,12 +218,8 @@ export default function CameraMenu() {
                             : '📷 Activați camera sau încărcați o imagine din galerie'}
                     </p>
                 )}
-
-                {/* Controls */}
                 {!capturedImage && (
                     <div className="flex items-center justify-center space-x-8 pb-4">
-
-                        {/* Buton galerie cu label nativ — fără JavaScript */}
                         <label
                             htmlFor="gallery-input"
                             className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 flex items-center justify-center text-emerald-400 shadow-lg hover:shadow-xl hover:scale-125 transition-all active:scale-95 cursor-pointer">
@@ -244,8 +232,6 @@ export default function CameraMenu() {
                                 onChange={handleFileChange}
                             />
                         </label>
-
-                        {/* Shutter / Start camera */}
                         <button type="button" aria-label="Take photo"
                             onClick={cameraActive ? capturePhoto : startCamera}
                             className="focus:outline-none cursor-pointer">
@@ -255,24 +241,18 @@ export default function CameraMenu() {
                                 </div>
                             </div>
                         </button>
-
-                        {/* Rotate */}
                         <button type="button" aria-label="Rotate camera" onClick={rotateCamera}
                             className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-950 to-emerald-900 flex items-center justify-center text-emerald-400 shadow-lg hover:shadow-xl hover:scale-125 transition-all active:scale-95 hover:rotate-180">
                             <FontAwesomeIcon icon={faSyncAlt} className="text-2xl" />
                         </button>
                     </div>
                 )}
-
-                {/* Loading */}
                 {loading && (
                     <div className="w-full flex flex-col items-center gap-3 py-6">
                         <FontAwesomeIcon icon={faSpinner} className="text-4xl text-emerald-500 animate-spin" />
                         <p className="text-emerald-600 font-semibold">Se analizează dispozitivul medical...</p>
                     </div>
                 )}
-
-                {/* Error */}
                 {error && (
                     <div className="w-full bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-2xl p-4 flex items-start gap-3">
                         <FontAwesomeIcon icon={faExclamationTriangle} className="text-red-500 mt-0.5 shrink-0" />
@@ -282,8 +262,6 @@ export default function CameraMenu() {
                         </div>
                     </div>
                 )}
-
-                {/* Result */}
                 {result && (
                     <div className="w-full space-y-4 pb-4">
                         <div className="bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-4 flex items-center gap-3">
