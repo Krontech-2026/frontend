@@ -11,7 +11,7 @@ export default function Home() {
         email: 'example@gmail.com',
         dob: 'yyyy-mm-dd',
         phone: '+40 123 456 789',
-        address: 'Bucharest, Romania',
+        address: 'București, România',
     });
 
     const handleEdit = () => setIsEditing(true);
@@ -26,11 +26,11 @@ export default function Home() {
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { placeholder, value } = e.target;
         const fieldMap: { [key: string]: keyof typeof formData } = {
-            'Full Name': 'fullName',
+            'Numele complet': 'fullName',
             'Email': 'email',
-            'Date of Birth': 'dob',
-            'Phone Number': 'phone',
-            'Address': 'address',
+            'Data nașterii': 'dob',
+            'Număr de telefon': 'phone',
+            'Adresa': 'address',
         };
         const field = fieldMap[placeholder];
         if (field) {
@@ -48,7 +48,7 @@ export default function Home() {
 
             <main className="flex flex-1 w-full max-w-3xl flex-col items-center space-y-8 p-6 bg-white dark:bg-zinc-900 rounded-3xl mt-6 shadow-2xl overflow-y-auto">
                 <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-emerald-500 text-center">
-                    👤 My Profile
+                    👤 Profilul meu
                 </h1>
 
                 <div className="flex flex-col items-center gap-4">
@@ -67,7 +67,7 @@ export default function Home() {
                         className="bg-linear-to-r from-emerald-500 to-emerald-600 text-white px-8 py-3 rounded-full font-bold hover:from-emerald-400 hover:to-emerald-500 hover:shadow-lg transition-all active:scale-95 flex items-center gap-3 cursor-pointer shadow-md"
                     >
                         <FontAwesomeIcon icon={faPencil} />
-                        Edit Profile
+                        Editează profilul
                     </button>
                 ) : (
                     <div className="flex gap-4 w-full max-w-xs">
@@ -76,29 +76,29 @@ export default function Home() {
                             className="flex-1 bg-linear-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-full font-bold hover:from-red-400 hover:to-red-500 hover:shadow-lg transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
                         >
                             <FontAwesomeIcon icon={faTimes} />
-                            Cancel
+                            Anulează
                         </button>
                         <button 
                             onClick={handleConfirm}
                             className="flex-1 bg-linear-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-bold hover:from-green-400 hover:to-green-500 hover:shadow-lg transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
                         >
                             <FontAwesomeIcon icon={faCheck} />
-                            Save
+                            Salvează
                         </button>
                     </div>
                 )}
 
                 <div className="w-full">
                     <h2 className="text-2xl font-bold text-emerald-600 mb-4 flex items-center gap-2">
-                        📋 Personal Information
+                        Informații personale
                     </h2>
 
                     <div className="w-full space-y-4">
                         <div>
-                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Full Name</label>
+                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Numele complet</label>
                             <input 
                                 type="text" 
-                                placeholder="Full Name" 
+                                placeholder="Numele complet" 
                                 disabled={!isEditing}
                                 value={formData.fullName}
                                 onChange={handleInputChange}
@@ -127,10 +127,10 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Date of Birth</label>
+                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Data nașterii</label>
                             <input 
                                 type="date" 
-                                placeholder="Date of Birth" 
+                                placeholder="Data nașterii" 
                                 disabled={!isEditing}
                                 value={formData.dob}
                                 onChange={handleInputChange}
@@ -143,10 +143,10 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Phone Number</label>
+                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Număr de telefon</label>
                             <input 
                                 type="tel" 
-                                placeholder="Phone Number" 
+                                placeholder="Număr de telefon" 
                                 disabled={!isEditing}
                                 value={formData.phone}
                                 onChange={handleInputChange}
@@ -159,10 +159,10 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Address</label>
+                            <label className="text-emerald-600 text-sm font-semibold mb-2 block">Adresa</label>
                             <input 
                                 type="text" 
-                                placeholder="Address" 
+                                placeholder="Adresa" 
                                 disabled={!isEditing}
                                 value={formData.address}
                                 onChange={handleInputChange}
@@ -183,10 +183,10 @@ export default function Home() {
 
                 <div className="w-full flex justify-center gap-4 items-center pt-8">
                     <Link href="/HomePage" className="bg-emerald-950 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors">
-                        Home
+                        Acasă
                     </Link>
                     <button className="bg-emerald-600 text-emerald-950 px-8 py-3 rounded-full font-semibold hover:bg-emerald-500 transition-colors">
-                        Profile
+                        Profil
                     </button>
                     <Link href="/SettingsMenu" className="bg-emerald-950 text-emerald-600 rounded-full p-3 hover:bg-emerald-900 transition-colors flex items-center justify-center cursor-pointer">
                         <FontAwesomeIcon icon={faSliders} className="text-xl transform rotate-90" />

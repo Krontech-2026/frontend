@@ -39,7 +39,7 @@ function ScannedItemContent() {
                         <FontAwesomeIcon icon={faArrowLeft} className="text-emerald-600 text-2xl cursor-pointer hover:text-emerald-500 transition-colors" />
                     </button>
                     <h1 className="text-4xl font-black text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-emerald-500 text-center">
-                        Scanned Item
+                        Obiect scanat
                     </h1>
                     <button onClick={toggleHeart} className="absolute right-0 text-emerald-600 text-3xl cursor-pointer hover:text-red-500 transition-all duration-300 hover:scale-110 active:scale-95">
                         <FontAwesomeIcon icon={isFilled ? faHeart : faHeartEmpty} />
@@ -51,20 +51,20 @@ function ScannedItemContent() {
                 </div>
 
                 <div className="w-full space-y-6">
-                    <InfoSection title="ℹ️ About">
-                        <p>Just a mad cat yap yap yap</p>
+                    <InfoSection title="ℹ️ Despre">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </InfoSection>
 
-                    <InfoSection title="📖 How to use">
+                    <InfoSection title="Cum se folosește?">
                         <ul className="list-disc list-inside space-y-2">
-                            <li>We don&apos;t use a cot wtf</li>
-                            <li>We use a medical device</li>
-                            <li>We usually feed and pet the cat</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         </ul>
                     </InfoSection>
 
-                    <InfoSection title="🤔 When to use?">
-                        <p>Every single day.</p>
+                    <InfoSection title="Când să fie folosit?">
+                        <p>În fiecare zi.</p>
                     </InfoSection>
                 </div>
             </main>
